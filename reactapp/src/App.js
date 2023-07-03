@@ -63,7 +63,7 @@ function App() {
           </Col>
         </Row>
         <Card >
-          {loading ? <Loader /> : data ? <ReactJson src={data || {}} name={false} displayDataTypes={false} /> : null}
+          {loading ? <Loader /> : data ? <ReactJson src={data || {}} name={false} displayDataTypes={false} displayObjectSize={false} /> : null}
 
         </Card>
 
