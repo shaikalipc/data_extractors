@@ -15,7 +15,7 @@ from lxml.html.clean import Cleaner
 from bs4 import BeautifulSoup
 
 
-openai.api_key  =  "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"
+openai.api_key  =  "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"
 
 def index(request):
     return render(request, 'index.html')
