@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core import serializers
 
@@ -15,10 +16,10 @@ from lxml.html.clean import Cleaner
 from bs4 import BeautifulSoup
 
 
-openai.api_key  =  "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"
+openai.api_key  =  "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"
 
 def index(request):
-    return render(request, 'index.html')
+    return HttpResponse('<h1>Hello World</h1>')
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
